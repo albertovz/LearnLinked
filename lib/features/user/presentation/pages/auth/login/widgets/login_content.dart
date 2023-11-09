@@ -70,6 +70,7 @@ class LoginContent extends StatelessWidget {
                 // vm.changePassword(value);
               },
               // error: vm.state.password.error,
+              obscureTexT: true,
               label: 'Contraseña',
               icon: Icons.lock_outlined,
             ),
