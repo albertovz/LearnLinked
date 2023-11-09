@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnlinked/features/user/presentation/pages/auth/login/blocs/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,8 +11,10 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Learn Linked',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      initialRoute: 'login',
+      routes: {
+        'login': (BuildContext context) => LoginPage()
+      },
     );
   }
 }
